@@ -130,7 +130,7 @@ async def websocket_endpoint(websocket: WebSocket):
     try:
         while True:
             data = await websocket.receive_json()
-            message_type = data.get("type", "private")
+            message_type = "private"        # data.get("type", "private")
             plaintext_message = data.get("message")
 
             if message_type == "private":
