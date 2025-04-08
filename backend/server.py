@@ -15,7 +15,7 @@ app = FastAPI()
 # ✅ CORS Middleware (Allow Frontend and development origins)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins in development; restrict in production
+    allow_origins=["https://frontend-sqmnzwy74-fares-projects-d76a0c1b.vercel.app"],  # Allow all origins in development; restrict in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
